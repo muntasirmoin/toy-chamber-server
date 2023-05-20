@@ -67,7 +67,7 @@ async function run() {
 
 
 
-        // search toy on all toy page by toy name
+        // search toy on all toy page by toy name with find method 
         app.get("/toyss/:ToyName", async (req, res) => {
             const ToyName = req.params.ToyName;
             const result = await toysCollection
