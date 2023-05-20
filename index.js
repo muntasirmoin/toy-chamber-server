@@ -38,7 +38,7 @@ async function run() {
         const database = client.db('toyChamber');
         const toysCollection = database.collection('toys');
 
-        // read toys
+        // read toys and with filter limit 20 added
         app.get('/toys', async (req, res) => {
             const cursor = toysCollection.find().limit(20);
             const result = await cursor.toArray();
