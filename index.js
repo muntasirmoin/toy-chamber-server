@@ -46,7 +46,7 @@ async function run() {
         })
 
 
-        // add toy
+        // add new toy insertOne method
         app.post('/toys', async (req, res) => {
             const toy = req.body;
             console.log('new toy', toy);
