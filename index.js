@@ -53,7 +53,7 @@ async function run() {
             const result = await toysCollection.insertOne(toy);
             res.send(result);
         })
-        // for tab sub category
+        // for tab sub category search use params id
         app.get("/toys/:subCategory", async (req, res) => {
             console.log(req.params.id);
             const jobs = await toysCollection
