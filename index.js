@@ -104,7 +104,7 @@ async function run() {
             res.send(result);
         })
 
-        //  single data filter
+        //  single data find by id
         app.get("/singleToy/:id", async (req, res) => {
             console.log(req.params.id);
             const toy = await toysCollection.findOne({
