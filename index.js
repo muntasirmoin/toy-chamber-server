@@ -83,7 +83,7 @@ async function run() {
             res.send(result);
         });
 
-        //   my toy with email
+        //   my toy with email [user verification]
         app.get("/myToys/:email", async (req, res) => {
             console.log(req.params.email);
             const toys = await toysCollection
